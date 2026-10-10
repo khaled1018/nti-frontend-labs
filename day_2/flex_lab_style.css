@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.outer {
+  background-color: blue;
+  width: 100%; /* full width */
+  height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+}
+
+.inner {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%; /* responsive width */
+  max-width: 900px; /* cap it */
+  height: 120px; /* fixed height looks better than vw */
+  border-radius: 34px;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+search {
+  width: 1em;
+  height: 1em;
+}
+
+.item {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.icon {
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+}
+
+.start {
+  color: white;
+  background-color: red;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 1em 2em;
+  border-radius: 16px;
+  cursor: pointer;
+}
